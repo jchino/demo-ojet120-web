@@ -1,4 +1,4 @@
-# Oracle JET v12.0　デモ・アプリケーション
+# Oracle JET v12.0 デモ・アプリケーション
 
 ## Scaffold の生成
 

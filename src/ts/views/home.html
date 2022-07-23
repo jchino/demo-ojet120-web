@@ -1,3 +1,18 @@
-<div>
-  <h1>Home</h1>
-</div>
+<oj-list-view aria-label="List of Pages" selection-mode="single" data="[[pageDataProvider]]" on-oj-item-action="[[gotoPage]]">
+  <template slot="itemTemplate" data-oj-as="item">
+    <li>
+      <oj-list-item-layout>
+        <span class="oj-typography-body-lg oj-text-color-primary">
+          <oj-bind-text value="[[item.data.pageName]]"></oj-bind-text>
+        </span>
+        <span slot="secondary" class="oj-typography-body-sm oj-text-color-secondary">
+          <oj-bind-text value="[[item.data.description]]"></oj-bind-text>
+        </span>
+        <span slot="leading">
+          <oj-avatar role="presentation"></oj-avatar>
+        </span>
+        <span slot="action" role="presentation" class="oj-listview-drill-icon oj-sm-align-items-flex-end"></span>
+      </oj-list-item-layout>
+    </li>
+  </template>
+</oj-list-view>

@@ -13,6 +13,7 @@ class RootViewModel {
     const navData = [
       { path: '', redirect: 'home'},
       { path: 'home' },
+      { path: 'chart' },
     ];
 
     // Setup Router
